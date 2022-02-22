@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+    <style>
+        body{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #number-wrapper {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 5px;
+        }
+        #number-wrapper > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Number Generator</h1>
+        <span id="span"></span>
+       <input  id="input" style="margin-bottom:30px;" value="" > <button id="btn">generate</button>
+    </div>
+    <div id="number-wrapper">
+    
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
